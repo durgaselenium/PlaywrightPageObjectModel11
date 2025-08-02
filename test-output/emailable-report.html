@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">open cart Test Regression pw Suite</th></tr>
+<tr><td><a href="#t0">open cart LoginPage Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,395</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">open cart HomePage Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">15,063</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">27,458</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">open cart Test Regression pw Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">open cart LoginPage Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m0">forgotPwdLinkExistTest</a></td><td rowspan="1">1754144844110</td><td rowspan="1">25</td></tr><tr><th colspan="4">open cart LoginPage Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m1">appLoginTest</a></td><td rowspan="1">1754144844535</td><td rowspan="1">642</td></tr><tr class="passedeven"><td><a href="#m2">loginPageNavigationTest</a></td><td rowspan="1">1754144843652</td><td rowspan="1">446</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">open cart HomePage Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.qa.opencart.tests.HomePageTest</td><td><a href="#m3">homepageTitleTest</a></td><td rowspan="1">1754144845795</td><td rowspan="1">182</td></tr><tr class="passedeven"><td><a href="#m4">homepageURLTest</a></td><td rowspan="1">1754144845983</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m5">searchTest</a></td><td rowspan="3">1754144846001</td><td rowspan="3">633</td></tr><tr class="passedeven"><td><a href="#m6">searchTest</a></td></tr><tr class="passedeven"><td><a href="#m7">searchTest</a></td></tr></tbody>
+</table>
+<h2>open cart LoginPage Test</h2><h3 id="m0">com.qa.opencart.tests.LoginPageTest#forgotPwdLinkExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Error {
+  message=&apos;SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//a[normalize-space()=&apos;Forgotten Password&apos;])[1]2222222&apos; is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5858:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:6536:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:6523:30)
+    at InjectedScript.querySelector (&lt;anonymous&gt;:6453:25)
+    at eval (eval at evaluate (:291:30), &lt;anonymous&gt;:2:34)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:293:16)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+  name=&apos;Error
+  stack=&apos;Error: SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//a[normalize-space()=&apos;Forgotten Password&apos;])[1]2222222&apos; is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5858:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:6536:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:6523:30)
+    at InjectedScript.querySelector (&lt;anonymous&gt;:6453:25)
+    at eval (eval at evaluate (:291:30), &lt;anonymous&gt;:2:34)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:293:16)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\javascript.js:217:12)
+    at async Frame.isVisibleInternal (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\frames.js:1083:14)
+    at async C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\frames.js:1075:14
+    at async ProgressController.run (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\progress.js:80:22)
+    at async FrameDispatcher.isVisible (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\dispatchers\frameDispatcher.js:171:21)
+    at async LongStandingScope._race (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async FrameDispatcher._handleCommand (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\dispatchers\dispatcher.js:90:14)
+    at async DispatcherConnection.dispatch (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\dispatchers\dispatcher.js:309:22)
+}
+Call log:
+-     - checking visibility of locator(&quot;xpath=(//a[normalize-space()=&apos;Forgotten Password&apos;])[1]2222222&quot;)
+
+	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:138)
+	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:131)
+	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:124)
+	at com.microsoft.playwright.impl.FrameImpl.isVisibleImpl(FrameImpl.java:597)
+	at com.microsoft.playwright.impl.PageImpl.isVisible(PageImpl.java:978)
+	at com.microsoft.playwright.Page.isVisible(Page.java:5716)
+	at com.qa.opencart.pages.LoginPage.isForgetPwdLinkExist(LoginPage.java:29)
+	at com.qa.opencart.tests.LoginPageTest.forgotPwdLinkExistTest(LoginPageTest.java:20)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message=&apos;SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//a[normalize-space()=&apos;Forgotten Password&apos;])[1]2222222&apos; is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5858:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:6536:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:6523:30)
+    at InjectedScript.querySelector (&lt;anonymous&gt;:6453:25)
+    at eval (eval at evaluate (:291:30), &lt;anonymous&gt;:2:34)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:293:16)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+  name=&apos;Error
+  stack=&apos;Error: SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;(//a[normalize-space()=&apos;Forgotten Password&apos;])[1]2222222&apos; is not a valid XPath expression.
+    at Object.queryAll (&lt;anonymous&gt;:5858:25)
+    at InjectedScript._queryEngineAll (&lt;anonymous&gt;:6536:49)
+    at InjectedScript.querySelectorAll (&lt;anonymous&gt;:6523:30)
+    at InjectedScript.querySelector (&lt;anonymous&gt;:6453:25)
+    at eval (eval at evaluate (:291:30), &lt;anonymous&gt;:2:34)
+    at UtilityScript.evaluate (&lt;anonymous&gt;:293:16)
+    at UtilityScript.&lt;anonymous&gt; (&lt;anonymous&gt;:1:44)
+    at CRExecutionContext.evaluateWithArguments (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\chromium\crExecutionContext.js:80:13)
+    at async LongStandingScope._race (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async evaluateExpression (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\javascript.js:217:12)
+    at async Frame.isVisibleInternal (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\frames.js:1083:14)
+    at async C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\frames.js:1075:14
+    at async ProgressController.run (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\progress.js:80:22)
+    at async FrameDispatcher.isVisible (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\dispatchers\frameDispatcher.js:171:21)
+    at async LongStandingScope._race (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\utils\isomorphic\manualPromise.js:94:14)
+    at async FrameDispatcher._handleCommand (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\dispatchers\dispatcher.js:90:14)
+    at async DispatcherConnection.dispatch (C:\Users\sride\AppData\Local\Temp\playwright-java-12683948086794551261\package\lib\server\dispatchers\dispatcher.js:309:22)
+}
+Call log:
+-     - checking visibility of locator(&quot;xpath=(//a[normalize-space()=&apos;Forgotten Password&apos;])[1]2222222&quot;)
+
+	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:262)
+	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:214)
+	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:136)
+	... 27 more
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.opencart.tests.LoginPageTest#appLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.opencart.tests.LoginPageTest#loginPageNavigationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>open cart HomePage Test</h2><h3 id="m3">com.qa.opencart.tests.HomePageTest#homepageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.opencart.tests.HomePageTest#homepageURLTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.opencart.tests.HomePageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Macbook</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.qa.opencart.tests.HomePageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>iMac</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.qa.opencart.tests.HomePageTest#searchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Samsung</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
