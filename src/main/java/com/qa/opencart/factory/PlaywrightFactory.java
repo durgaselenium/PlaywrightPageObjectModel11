@@ -64,7 +64,11 @@ case "safari":
 	
 case "chrome":
 //	browser = playwright.chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false));
-	tlBrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false)));
+	tlBrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("msedge").setHeadless(false)));
+	break;
+	
+case "edge":
+   tlBrowser.set(getPlaywright().chromium().launch(new LaunchOptions().setChannel("chrome").setHeadless(false)));
 	break;
 default:
 	System.out.println("please Pass the right browser Name .......");

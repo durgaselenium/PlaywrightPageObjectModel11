@@ -10,7 +10,7 @@ public class LoginPage {
  private String emailId   = "//input[@name='email']";
  private String password  = "//input[@name='password']";
  private String loginBtn  = "//input[@value='Login']";
- private String forgetpwdLink = "(//a[normalize-space()='Forgotten Password'])[1]2222222"; //wrong xpath
+ private String forgetpwdLink = "(//a[normalize-space()='Forgotten Password'])[1]"; //wrong xpath
  private String logOutLnk     = "//div[@class='list-group']/a[13]";
  
 //2. page constructor:

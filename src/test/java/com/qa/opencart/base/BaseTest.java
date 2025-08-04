@@ -4,6 +4,7 @@ import java.util.Properties;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.microsoft.playwright.Page;
 import com.qa.opencart.factory.PlaywrightFactory;
@@ -18,10 +19,16 @@ protected Properties prop;
 protected HomePage homepage;
 protected LoginPage loginpage;
 
+@Parameters({"browser"})
 @BeforeTest
-public void setUp() {
+public void setUp(String browserName) {
 pf = new PlaywrightFactory();
 prop = pf.init_prop();
+
+if(browserName!=null) {
+	prop.setProperty("browser", browserName);
+}
+
 //page = pf.initBrowser("chromium");
 page = pf.initBrowser(prop);
 homepage = new HomePage(page); 
