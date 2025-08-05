@@ -5,7 +5,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class FristBasicTest {
- //my first test
+ //my first test is ready --------
 	public static void main(String[] args) {
 		Playwright playwright = Playwright.create();
 
