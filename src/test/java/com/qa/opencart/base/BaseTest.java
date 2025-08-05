@@ -29,7 +29,7 @@ if(browserName!=null) {
 	prop.setProperty("browser", browserName);
 }
 
-//page = pf.initBrowser("chromium");
+  // page = pf.initBrowser("chromium");
 page = pf.initBrowser(prop);
 homepage = new HomePage(page); 
 }
