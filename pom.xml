@@ -61,7 +61,7 @@
 				<version>3.3.0</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testng_Regression.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/testrunners/testng_Regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
