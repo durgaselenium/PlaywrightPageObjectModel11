@@ -13,9 +13,9 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
-		<extentreports-version>5.1.2</extentreports-version>
+		  <maven.compiler.source>17</maven.compiler.source>
+		 <maven.compiler.target>17</maven.compiler.target>
+         <extentreports-version>5.1.2</extentreports-version>
 	</properties>
 
 	<dependencies>
@@ -26,13 +26,15 @@
 			<version>1.53.0</version>
 		</dependency>
 
+		
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
+       <dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.11.0</version>
 			<scope>compile</scope>
 		</dependency>
+
 
 
 		<dependency>
@@ -46,7 +48,7 @@
 
 	<build>
 		<plugins>
-			<plugin>
+			  <plugin>  
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.13.0</version>
@@ -56,7 +58,7 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
+                         <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.3.0</version>
@@ -66,6 +68,7 @@
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
+
 		</plugins>
 	</build>
 </project>

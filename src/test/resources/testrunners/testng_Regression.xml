@@ -19,4 +19,18 @@
      </classes>
   </test> 
   
+<!-- <test  name="open cart HomePage Test_firefox1">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.opencart.tests.HomePageTest"/>
+     </classes>
+  </test> 
+  
+  <test name="open cart LoginPage Test_chrome1">
+   <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.opencart.tests.LoginPageTest"/>
+     </classes>
+  </test>-->
+  
   </suite> 

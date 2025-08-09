@@ -7,10 +7,10 @@ public class LoginPage {
  private Page page;
 
 //1. String locators ---OR
- private String emailId   = "//input[@name='email']";
- private String password  = "//input[@name='password']";
- private String loginBtn  = "//input[@value='Login']";
- private String forgetpwdLink = "(//a[normalize-space()='Forgotten Password'])[1]"; //wrong xpath
+ private String emailId       = "//input[@name='email']";
+ private String password      = "//input[@name='password']";
+ private String loginBtn      = "//input[@value='Login']";
+ private String forgetpwdLink = "//div[@class='form-group']/a[text()='Forgotten Password']"; //wrong xpath
  private String logOutLnk     = "//div[@class='list-group']/a[13]";
  
 //2. page constructor:
